@@ -192,7 +192,13 @@ main {
 .card{
     padding: 16px;
     width: 16rem;
-    border: 1px var(--color-marrom) solid;
+    border-top: solid 1px var(--color-marrom);
+    border-bottom: solid 1px var(--color-marrom);
+    border-left: solid 1px var(--color-marrom);
+}
+
+.card:last-child{
+    border-right: solid 1px var(--color-marrom);
 }
 
 .card-img{

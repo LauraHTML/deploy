@@ -24,8 +24,20 @@ p, a, li {
 /* titulos */
 h1, h2, h3{
     font-family: "Instrument Serif", serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
 }
 
 .instrument-serif-regular {
@@ -52,6 +64,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
 header {
@@ -115,15 +128,11 @@ main {
 
 #hero-section{
     padding: 16px 4px;
-    display: flex;
-    flex-direction: column;
     width: 70%;
     gap: 4rem;
 }
 
 #hero-section-text{
-    display: flex;
-    flex-direction: column;
     gap: 16px;
     align-items: center;
 }
@@ -135,10 +144,8 @@ main {
 
 #section-produtos{
     width: 100%;
-    padding: 16px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 16px 16px;
+    align-items: start;
     border-top: solid 1px var(--color-marrom);
 }
 
@@ -149,8 +156,6 @@ main {
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
     padding: 16px;
     width: 16rem;
     border: 1px var(--color-marrom) solid;
@@ -162,10 +167,41 @@ main {
     width: 100%;
 }
 
+.card-header{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
 .card-desc{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+#section-blog{
+    width: 100%;
+    padding: 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-top: solid 1px var(--color-marrom);
+}
+
+#section-blog-body{
+    padding: 4px 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#section-blog-nav{
+    width: 100%;
+}
+
+.control-carrossel{
+    background-color: var(--color-azul);
+    widht: 6rem;
 }
 
 footer {

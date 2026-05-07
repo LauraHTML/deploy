@@ -1,219 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto | Início</title>
-    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="stylesheet" href="./src/css/estilo.css" />
 
     <!-- fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <div id="inicio">
-        <h1 id="text" class="text">Seja bem vindo</h1>
+      <h1 id="text" class="text">Seja bem vindo</h1>
     </div>
 
     <header>
-        <nav>
-            <div id="logo">
-                <img src="/src/assets/logo.svg" alt="Logo">
-
-            </div>
-            <ul class="nav-list">
-                <li><a href="/index.html">Início</a></li>
-                <li><a href="/src/pages/sobre.html">Sobre</a></li>
-                <li><a href="/src/pages/contato.html">Contato</a></li>
-            </ul>
-            <button class="button-outline">
-                <p>Nossos cookies</p>
-            </button>
-        </nav>
-
+      <div class="menu-hamburguer" id="menu-icone">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Menu para mobile -->
+       <div id="logo">
+          <img src="/src/assets/logo.svg" alt="Logo" />
+        </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="/index.html">Início</a></li>
+          <li><a href="/src/pages/sobre.html">Sobre</a></li>
+          <li><a href="/src/pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="button-outline" id="nossos-cookies">
+        <p>Nossos cookies</p>
+      </button>
     </header>
     <main id="main">
-        <!-- <input type="button" class="cor" onclick="trocar('#157145')"> -->
+      <!-- <input type="button" class="cor" onclick="trocar('#157145')"> -->
 
-        <section id="hero-section" class="col">
-            <div id="hero-section-text" class="col">
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem minus, non aperiam aut nesciunt amet
-                    assumenda explicabo cupiditate facere eligendi, velit labore, maxime deleniti dicta iste ducimus
-                    consequatur quas neque!</p>
-                <button class="button-default">
-                    <p>call to action</p>
-                </button>
+      <section id="hero-section" class="col">
+        <div id="hero-section-text" class="col">
+          <h2>Lorem ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
+            minus, non aperiam aut nesciunt amet assumenda explicabo cupiditate
+            facere eligendi, velit labore, maxime deleniti dicta iste ducimus
+            consequatur quas neque!
+          </p>
+          <button class="button-default">
+            <p>call to action</p>
+          </button>
+        </div>
+        <div class="carrossel"></div>
+      </section>
+
+      <section id="section-produtos" class="col">
+        <div class="section-title">
+          <h2>Nossos produtos</h2>
+        </div>
+
+        <div id="section-produtos-body">
+          <div class="card col">
+            <div class="card-header">
+              <div class="card-img"></div>
+              <h3 class="card-title">nome do produto</h3>
+              <div class="card-desc">
+                <p class="desc-produto-card">subtitulo</p>
+                <p class="preco">R$ 00.00</p>
+              </div>
             </div>
-            <div class="carrossel">
+            <div class="card-body">
+              <p>Descrição do produto</p>
             </div>
-        </section>
-
-        <section id="section-produtos" class="col">
-            <div class="section-title">
-               <h2>Nossos produtos</h2> 
-
+          </div>
+          <div class="card col">
+            <div class="card-header">
+              <div class="card-img"></div>
+              <h3 class="card-title">nome do produto</h3>
+              <div class="card-desc">
+                <p class="desc-produto-card">subtitulo</p>
+                <p class="preco">R$ 00.00</p>
+              </div>
             </div>
-            
-
-            <div id="section-produtos-body">
-                <div class="card col">
-                    <div class="card-header">
-                            <div class="card-img">
-                                
-                            </div>
-                            <h3 class="card-title">
-                                nome do produto
-                            </h3>
-                            <div class="card-desc">
-                                <p class="desc-produto-card">
-                                    subtitulo
-                                </p>
-                                <p class="preco">
-                                    R$ 00.00
-                                </p>
-                            </div>
-                        </div>
-                    <div class="card-body">
-                        
-                        <p>Descrição do produto</p>
-                    </div>
-                </div>
-                 <div class="card col">
-                    <div class="card-header">
-                            <div class="card-img">
-                                
-                            </div>
-                            <h3 class="card-title">
-                                nome do produto
-                            </h3>
-                            <div class="card-desc">
-                                <p class="desc-produto-card">
-                                    subtitulo
-                                </p>
-                                <p class="preco">
-                                    R$ 00.00
-                                </p>
-                            </div>
-                        </div>
-                    <div class="card-body">
-                        
-                        <p>Descrição do produto</p>
-                    </div>
-                </div>
-                 <div class="card col">
-                    <div class="card-header">
-                            <div class="card-img">
-                                
-                            </div>
-                            <h3 class="card-title">
-                                nome do produto
-                            </h3>
-                            <div class="card-desc">
-                                <p class="desc-produto-card">
-                                    subtitulo
-                                </p>
-                                <p class="preco">
-                                    R$ 00.00
-                                </p>
-                            </div>
-                        </div>
-                    <div class="card-body">
-                        
-                        <p>Descrição do produto</p>
-                    </div>
-                </div>
+            <div class="card-body">
+              <p>Descrição do produto</p>
             </div>
-        </section>
-
-        <section id="section-sobre" class="col">
-            <div id="section-sobre-text" class="col">
-                <h2>Veja mais sobre a nossa loja</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie, ex nec convallis ullamcorper, ante quam ullamcorper nisl, sit amet rutrum dui nibh ac metus. Nullam commodo tincidunt erat in condimentum. </p>
+          </div>
+          <div class="card col">
+            <div class="card-header">
+              <div class="card-img"></div>
+              <h3 class="card-title">nome do produto</h3>
+              <div class="card-desc">
+                <p class="desc-produto-card">subtitulo</p>
+                <p class="preco">R$ 00.00</p>
+              </div>
             </div>
-            
-        </section>
-
-        <section id="section-blog">
-            <div id="section-blog-nav" class="row">
-              <h2 class="section-title">Nosso blog</h2>  
-                <div class="control-carrossel row">
-                    <p><</p>
-                    <p>></p>
-                </div>
+            <div class="card-body">
+              <p>Descrição do produto</p>
             </div>
-            
-            <div id="section-blog-body">
-                <div class="card col">
-                    <div class="card-header">
-                            <div class="card-img">
-                                
-                            </div>
-                            <p>data publicacao</p>
-                            <h3 class="card-title">titulo top</h3>
-                        </div>
-                    <div class="card-body">
-                        <p>Descrição sobre a materia</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
 
-                <div class="card col">
-                    <div class="card-header">
-                            <div class="card-img">
-                                
-                            </div>
-                            <p>data publicacao</p>
-                            <h3 class="card-title">titulo top</h3>
-                        </div>
-                    <div class="card-body">
-                        <p>Descrição sobre a materia</p>
-                    </div>
-                </div>
+      <section id="section-sobre" class="col">
+        <div id="section-sobre-text" class="col">
+          <h2>Veja mais sobre a nossa loja</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            molestie, ex nec convallis ullamcorper, ante quam ullamcorper nisl,
+            sit amet rutrum dui nibh ac metus. Nullam commodo tincidunt erat in
+            condimentum.
+          </p>
+        </div>
+      </section>
 
-                <div class="card col">
-                    <div class="card-header">
-                            <div class="card-img">
-                                
-                            </div>
-                            <p>data publicacao</p>
-                            <h3 class="card-title">titulo top</h3>
-                        </div>
-                    <div class="card-body">
-                        <p>Descrição sobre a materia</p>
-                    </div>
-                </div>
+      <section id="section-blog">
+        <div id="section-blog-nav" class="row">
+          <h2 class="section-title">Nosso blog</h2>
+          <div class="control-carrossel row">
+            <p><</p>
+            <p>></p>
+          </div>
+        </div>
+
+        <div id="section-blog-body">
+          <div class="card col">
+            <div class="card-header">
+              <div class="card-img"></div>
+              <p>data publicacao</p>
+              <h3 class="card-title">titulo top</h3>
             </div>
-        </section>
+            <div class="card-body">
+              <p>Descrição sobre a materia</p>
+            </div>
+          </div>
 
+          <div class="card col">
+            <div class="card-header">
+              <div class="card-img"></div>
+              <p>data publicacao</p>
+              <h3 class="card-title">titulo top</h3>
+            </div>
+            <div class="card-body">
+              <p>Descrição sobre a materia</p>
+            </div>
+          </div>
+
+          <div class="card col">
+            <div class="card-header">
+              <div class="card-img"></div>
+              <p>data publicacao</p>
+              <h3 class="card-title">titulo top</h3>
+            </div>
+            <div class="card-body">
+              <p>Descrição sobre a materia</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="footer" class="col">
-        <div id="img-footer">
-
+      <div id="img-footer">
+        <!-- <img src="/src/assets/ilu-footer-desktop.svg" alt="ilustração da loja" /> -->
+      </div>
+      <section id="footer-content">
+        <div id="footer-gmail">
+          <h2>Entre em contato:</h2>
+          <input type="text" />
         </div>
-        <div id="footer-gmail"></div>
-        <div id="footer-nav">
-            <ul>
-                <li>Sobre</li>
-                <li>Contato</li>
-                <li>Mapa</li>
-                <li>Loja</li>
-            </ul>
-            <ul>
-                <li>redes</li>
-                <li>redes</li>
-                <li>redes</li>
-            </ul>
+        <div id="footer-nav" class="row">
+          <ul>
+            <li>Sobre</li>
+            <li>Contato</li>
+            <li>Mapa</li>
+            <li>Loja</li>
+          </ul>
+          <ul>
+            <li>redes</li>
+            <li>redes</li>
+            <li>redes</li>
+          </ul>
         </div>
-        <div id="footer-commercial"></div>
+      </section>
+      <div id="footer-commercial"></div>
     </footer>
 
     <script src="./src/js/script.js"></script>
-</body>
-
+  </body>
 </html>
